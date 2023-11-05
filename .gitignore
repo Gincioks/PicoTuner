@@ -11,3 +11,4 @@ model/**
 llama7b_serve/**
 out/**
 logs
+.vscode
