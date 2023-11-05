@@ -8,20 +8,18 @@
 # - support for ffn_dim_multiplier which llama2-70b uses
 # - LoRA
 
-import logging
-import math
-from typing import Optional, Tuple
-
-import sentencepiece
 import torch
 import torch.nn.functional as F
 from torch import nn
-
-from pico_tuner.utils.torch_utils import (cleanup_cache, device_map,
-                                          restore_rng_state, save_rng_state)
+import sentencepiece
+import math
 
 from .blackbox import BlackboxDisk
 from .model_config import ModelArgs
+
+from pico_tuner.utils.torch_utils import save_rng_state, restore_rng_state, device_map, cleanup_cache
+from typing import Optional, Tuple
+import logging
 
 
 class RMSNorm(torch.nn.Module):

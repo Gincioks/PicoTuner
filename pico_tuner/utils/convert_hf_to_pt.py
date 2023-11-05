@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
+from transformers import AutoTokenizer, MistralModel
 import json
 import os
-
-from transformers import AutoTokenizer, MistralModel
 
 
 def download_and_convert_to_custom_format(model_name: str, save_directory: str):

@@ -1,10 +1,9 @@
 import logging
+import torch
 import os
 
-import torch
-
-from pico_tuner.llama import LlamaTokenizer, load_frozen_llama
-from pico_tuner.mistral import MistralTokenizer, load_frozen_mistral
+from pico_tuner.llama import load_frozen_llama, LlamaTokenizer
+from pico_tuner.mistral import load_frozen_mistral, MistralTokenizer
 from pico_tuner.utils.torch_utils import greedy_gen
 
 

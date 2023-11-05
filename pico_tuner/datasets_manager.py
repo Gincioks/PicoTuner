@@ -1,6 +1,5 @@
-import logging
-
 from datasets import load_dataset
+import logging
 
 
 class DatasetsManager:

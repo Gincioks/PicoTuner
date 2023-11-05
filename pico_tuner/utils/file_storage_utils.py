@@ -1,8 +1,7 @@
 import os
 import shutil
-import tarfile
-
 import requests
+import tarfile
 from tqdm import tqdm
 
 

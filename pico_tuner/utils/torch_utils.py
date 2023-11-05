@@ -1,6 +1,5 @@
-import logging
-
 import torch
+import logging
 
 
 def device_map(device):
@@ -11,9 +10,9 @@ def device_map(device):
 
 def device_supports_dtype(device, dtype):
     try:
-        torch.tensor([1.0, 2.0]).to(device).to(dtype)
+        tensor = torch.tensor([1.0, 2.0]).to(device).to(dtype)
         return True
-    except TypeError:
+    except TypeError as e:
         return False
 
 
