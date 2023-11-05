@@ -1,0 +1,14 @@
+[
+    {
+        "model_name": "llama-7b",
+        "params": "7b"
+    },
+    {
+        "model_name": "llama-30b",
+        "params": "30b"
+    },
+    {
+        "model_name": "llama-70b",
+        "params": "70b"
+    }
+]

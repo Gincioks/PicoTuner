@@ -1,0 +1,20 @@
+[
+    {
+        "model_name": "mistral-7b-v0.1",
+        "params": "7b",
+        "huggingface_name": "mistralai/Mistral-7B-v0.1",
+        "magnetic_link": "magnet:?xt=urn:btih:208b101a0f51514ecf285885a8b0f6fb1a1e4d7d&dn=mistral-7B-v0.1&tr=udp%3A%2F%http://2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=https%3A%2F%http://2Ftracker1.520.jp%3A443%2Fannounce",
+        "url": "https://files.mistral-7b-v0-1.mistral.ai/mistral-7B-v0.1.tar"
+    },
+    {
+        "model_name": "mistral-7b-Instruct-v0.1",
+        "params": "7b",
+        "huggingface_name": "mistralai/Mistral-7B-Instruct-v0.1",
+        "url": "https://files.mistral-7b-v0-1.mistral.ai/mistral-7B-instruct-v0.1.tar"
+    },
+    {
+        "model_name": "Mistral-7B-OpenOrca",
+        "params": "7b",
+        "huggingface_name": "Open-Orca/Mistral-7B-OpenOrca"
+    }
+]

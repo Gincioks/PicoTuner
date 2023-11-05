@@ -1,0 +1,9 @@
+python-dotenv
+sentencepiece 
+numpy
+fewlines
+datasets
+transformers
+click
+inquirer
+protobuf

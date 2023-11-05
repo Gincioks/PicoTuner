@@ -1,0 +1,14 @@
+[
+    {
+        "model_name": "codellama-7b",
+        "params": "7b"
+    },
+    {
+        "model_name": "codellama-7b-python",
+        "params": "7b"
+    },
+    {
+        "model_name": "codellama-7b-instruct",
+        "params": "7b"
+    }
+]
