@@ -54,7 +54,7 @@ sh Miniconda3-latest-MacOSX-arm64.sh
 (3) Make a conda environment
 
 ```bash
-conda create -n pico python=3.11.6
+conda create -n pico python=3.11.0
 conda activate pico
 ```
 
