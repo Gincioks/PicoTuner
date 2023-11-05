@@ -1,17 +1,17 @@
 # PicoTuner
 
-PicoTuner offers a versatile solution for fine-tuning Llama2 and CodeLLama models, including their hefty 70B/35B counterparts, on Apple's M1/M2 devices (e.g., Macbook Air, Mac Mini) and consumer Nvidia GPUs.
+PicoTuner offers a versatile solution for fine-tuning Mistral, Llama2, CodeLLama models, including their hefty 70B/35B counterparts, on Apple's M1/M2 devices (e.g., Macbook Air, Mac Mini) and consumer Nvidia GPUs.
 
 ## Overview
 
-PicoTuner is built for developers looking to fine-tune large language models on hardware that's more readily available to consumers. Unlike typical approaches that may employ quantization, PicoTuner uses a novel method that leverages SSD or main memory during both the forward and backward passes, referred to as _slowllama_. This allows for efficient model fine-tuning without the need for high-end, enterprise-level hardware.
+PicoTuner is built for developers looking to fine-tune large language models on hardware that's more readily available to consumers. Unlike typical approaches that may employ quantization, PicoTuner uses a novel method that leverages SSD or main memory during both the forward and backward passes. This allows for efficient model fine-tuning without the need for high-end, enterprise-level hardware.
 
 ### Key Features
 
-- **No Quantization**: Utilizes _slowllama_ technique for offloading parts of the model to persistent storage or main memory, optimizing for fine-tuning performance over interactivity.
+- **No Quantization**: Utilizes [_slowllama_](https://github.com/okuvshynov/slowllama) technique for offloading parts of the model to persistent storage or main memory, optimizing for fine-tuning performance over interactivity.
 - **LoRA Implementation**: Employs Learning without Forgetting (LoRA) to constrain updates to a smaller subset of model parameters, enhancing the fine-tuning process.
 - **Apple Silicon & CUDA Support**: Compatible with both Apple M1/M2 devices and Nvidia GPUs, with specialized experimental support for CUDA environments.
-- **Dedicated to Fine-Tuning**: The project is focused exclusively on model fine-tuning, without any specific optimizations for inference. For inference needs, refer to the `llama.cpp` implementation.
+- **Dedicated to Fine-Tuning**: The project is focused exclusively on model fine-tuning, without any specific optimizations for inference. For inference needs, refer to the [_llama.cpp_](https://github.com/ggerganov/llama.cpp) implementation.
 
 ## Motivation
 
