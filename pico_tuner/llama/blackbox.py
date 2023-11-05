@@ -1,8 +1,11 @@
 import os
-import torch
-from .model_config import ModelArgs
 
-from pico_tuner.utils.torch_utils import device_map, next_id, device_supports_dtype
+import torch
+
+from pico_tuner.utils.torch_utils import (device_map, device_supports_dtype,
+                                          next_id)
+
+from .model_config import ModelArgs
 
 
 class BlackboxDisk(torch.nn.Module):

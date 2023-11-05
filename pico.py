@@ -1,16 +1,20 @@
 #!/usr/bin/env python3
-import shutil
-import click
 import os
+import shutil
 import sys
 import threading
 import time
+
+import click
 import inquirer
-from pico_tuner import DatasetsManager, ModelsManager, FinetuneManager, InferenceManager
-from pico_tuner.configs import DatasetsConfig, LoraConfig, TrainingConfig, OthersConfig
-from pico_tuner.utils import find_and_delete_folder, download_and_unzip
+
+from pico_tuner import (DatasetsManager, FinetuneManager, InferenceManager,
+                        ModelsManager)
+from pico_tuner.configs import (DatasetsConfig, LoraConfig, OthersConfig,
+                                TrainingConfig)
 from pico_tuner.llama import LlamaTokenizer
 from pico_tuner.mistral import MistralTokenizer
+from pico_tuner.utils import download_and_unzip, find_and_delete_folder
 
 
 class CLIManager():
